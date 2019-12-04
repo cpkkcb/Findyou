@@ -30,8 +30,8 @@ var a=0;
   var str = document.getElementsByTagName('body')[0].innerText;
  var str = str.split(" ");
  console.log(str);
- //过滤的关键字
- var sw = ['科技','系统','登录'];
+ //检索的页面关键字的关键字
+ var sw = ['科技','系统','登录','PK','赛车','注册网址','开奖','走势'];
  for (i=0;i<str.length;i++)
  {
  	for (j=0;j<str.length;j++)
