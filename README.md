@@ -7,6 +7,9 @@
 谷歌浏览器 输入地址 chrome://extensions/
 打开开发者模式，然后加载下载的项目即可。
 ## 效果
+不存在敏感词
+![image](https://github.com/upkn/Findyou/blob/master/test3.jpg)
+
 少量敏感词则显示具体数目，目前设置的为15
 
 ![image](https://github.com/upkn/Findyou/blob/master/test.jpg)
