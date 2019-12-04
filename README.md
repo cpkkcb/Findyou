@@ -16,6 +16,6 @@
 ![image](https://github.com/upkn/Findyou/blob/master/test1.jpg)
 
 ## 下一步
-优化敏感词匹配显示方式
-增加快捷开关，平时关闭。
+优化敏感词匹配显示方式<br>
+增加快捷开关，平时关闭。<br>
 代办事项 -1。
