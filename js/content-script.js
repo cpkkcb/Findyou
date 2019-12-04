@@ -27,21 +27,28 @@
 
 
 var a=0;
-  var str = document.getElementsByTagName('body')[0].innerText;
- var str = str.split(" ");
- console.log(str);
+ //  var str = document.getElementsByTagName('html')[0].outerHTML;
+ //  var str=str.replace(/<\/?.+?>/g,"");
+ // var lstr=str.replace(/ /g,"");
+ // var lstr = lstr.split(" ");
+ // console.log(lstr);
+   var str = document.getElementsByTagName('html')[0].outerHTML; //去掉空格
+    var res =str.replace(/<[^>]+>/g, ""); //去掉所有的html标记
+    var res1 = res.replace(/↵/g, "");     //去掉所有的↵符号
+    var res2 = res1.replace(/[\r\n]/g, "")
+    var lstr = res2.split(" ");
  //检索的页面关键字的关键字
  var sw = ['科技','系统','登录','PK','赛车','注册网址','开奖','走势'];
- for (i=0;i<str.length;i++)
+ for (i=0;i<lstr.length;i++)
  {
- 	for (j=0;j<str.length;j++)
+ 	for (j=0;j<sw.length;j++)
  	{
- 		var r = str[i].indexOf(sw[j]) != -1;
+ 		var r = lstr[i].indexOf(sw[j]) != -1;
  		if(r==true)
  		{
  			a=a+1;
  		
- 			console.log(str[i]);
+ 			console.log(lstr[i]);
 
  		
  		// 	chrome.browserAction.setBadgeText({text: "1"});
