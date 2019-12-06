@@ -1,37 +1,4 @@
-// alert(1);
- // var str = document.getElementsByTagName('body')[0].innerText;
- // var str = str.split(/[(\r\n)\r\n]+/);
-
- // var sw = ['赌博','娱乐','金融','系统','公司'];
- // 	for(i=0;i<str.length;i++){
- // 		for(j=0;j<sw.length;j++)
- // 		{
-
- // 		}
- // 	}
- // console.log(str);
- // // for (var i = 0;i<str.length;i++) {
- // // 	 for (var j = 0;j<sw.length;i++) {
- // // 	 	if(str[i]==sw[j]){
- // // 	 		alert(1);
- // // 	 	}
- // // }
-
-
- // // // }
- // chrome.runtime.sendMessage({cmd: "no"}, function(response) 
-	// {  
-	// 	//console.log(response); 
-
-	// });
-
-
 var a=0;
- //  var str = document.getElementsByTagName('html')[0].outerHTML;
- //  var str=str.replace(/<\/?.+?>/g,"");
- // var lstr=str.replace(/ /g,"");
- // var lstr = lstr.split(" ");
- // console.log(lstr);
    var str = document.getElementsByTagName('html')[0].outerHTML; //去掉空格
     var res =str.replace(/<[^>]+>/g, ""); //去掉所有的html标记
     var res1 = res.replace(/↵/g, "");     //去掉所有的↵符号
@@ -49,17 +16,8 @@ var a=0;
  			a=a+1;
  		
  			console.log(lstr[i]);
-
- 		
- 		// 	chrome.browserAction.setBadgeText({text: "1"});
-			// chrome.browserAction.setBadgeBackgroundColor({color: [190, 190, 190, 230]});
- 			// document.getElementById=('p1').innerHTML='yyyy';
  		}
- 		// else
- 		// {
- 		// 	console.log(1111);
- 		// 	break;
- 		// }
+ 		
  		
  	}
 
