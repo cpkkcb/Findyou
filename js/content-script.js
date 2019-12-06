@@ -17,8 +17,6 @@ var a=0;
  		
  			console.log(lstr[i]);
  		}
- 		
- 		
  	}
 
  }
