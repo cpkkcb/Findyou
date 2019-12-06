@@ -1,11 +1,3 @@
-// onRemoved 事件，当关闭tab页时，被触发。
-// chrome.tabs.onRemoved.addListener(function (id) {
-// 	chrome.browserAction.setBadgeText({text: 'new'});
-//     chrome.browserAction.setBadgeBackgroundColor({color: [190, 190, 190, 255]});
-// });
-//tab变化时触发
-	
-
 chrome.tabs.onActivated.addListener(function (activeInfo) {
     if (activeInfo.tabId) {
         chrome.tabs.get(activeInfo.tabId, function (tab) {
@@ -17,15 +9,6 @@ chrome.tabs.onActivated.addListener(function (activeInfo) {
         });
     }
 });
-
-
-
-
-
-
-
-
-
 chrome.runtime.onMessage.addListener(  function(request, sender, sendResponse) { 
 
 
@@ -42,22 +25,9 @@ if(b>15)
    chrome.browserAction.setBadgeText({text:"more"});
 }
  
-
-
 }
 
-// if (b>30 ){
-//    chrome.browserAction.setBadgeText({text: "more"});
-// chrome.browserAction.setBadgeBackgroundColor({color: [255, 0, 0, 255]});
-// }
-
-
 }
-
-
-
-
-
 if (request.cmd== "no") {
 
       sendResponse( "ok"); 
@@ -67,8 +37,3 @@ chrome.browserAction.setBadgeBackgroundColor({color: [190, 190, 190, 255]});
 
   
   });
-
-
-
-
-
