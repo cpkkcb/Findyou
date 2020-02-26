@@ -5,7 +5,7 @@ var a=0;
     var res2 = res1.replace(/[\r\n]/g, "")
     var lstr = res2.split(" ");
  //检索的页面关键字的关键字
- var sw = ['科技','系统','登录','PK','赛车','注册网址','开奖','走势'];
+ var sw = ['科技','系统','登录','PK','赛车','注册网址','开奖','走势','172','127','10'];
  for (i=0;i<lstr.length;i++)
  {
  	for (j=0;j<sw.length;j++)
