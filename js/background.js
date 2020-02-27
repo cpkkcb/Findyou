@@ -20,6 +20,7 @@ for(b=1;b<10000;b++){
         chrome.browserAction.setBadgeText({text: b.toString()});
 chrome.browserAction.setBadgeBackgroundColor({color: [255, 0, 0, 255]});
     //敏感词超过15个，badge则显示more
+   // alert("页面存在敏感词汇，请查证");
 if(b>15)
 {
    chrome.browserAction.setBadgeText({text:"more"});
